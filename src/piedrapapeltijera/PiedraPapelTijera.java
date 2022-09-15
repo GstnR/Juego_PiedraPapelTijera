@@ -5,7 +5,6 @@
 package piedrapapeltijera;
 
 import java.util.ArrayList;
-import jdk.nashorn.internal.codegen.CompilerConstants;
 import piedrapapeltijera.Entidades.Enemigo;
 import piedrapapeltijera.Entidades.Enemigo_3Dificil;
 import piedrapapeltijera.Entidades.Jugador;
@@ -36,11 +35,11 @@ public class PiedraPapelTijera {
             switch (resultado) {
                 case -1:
                     System.out.println("Resultado: -> Perdiste");
-                    System.out.println("Mensaje Enemigo: "+enemigo.getMensaje());
+                    System.out.println("Mensaje Enemigo: " + enemigo.getMensaje());
                     if (enemigo instanceof Enemigo_3Dificil) {
                         System.out.println("Insulto:" + ((Enemigo_3Dificil) enemigo).getInsulto());
                     }
-                     jugador.setPuntaje(jugador.getPuntaje()-1);
+                    jugador.setPuntaje(jugador.getPuntaje() - 1);
                     break;
                 case 0:
                     System.out.println("Resultado: -> Empate");
@@ -49,15 +48,13 @@ public class PiedraPapelTijera {
                 case 1:
                     System.out.println("Resultado: -> Ganaste");
                     System.out.println("Mensaje Enemigo: " + enemigo.getMensaje());
-                    jugador.setPuntaje(jugador.getPuntaje()+1);
+                    jugador.setPuntaje(jugador.getPuntaje() + 1);
                     break;
 
             }
         }
 
         juego.mensajeFinal(jugador);
-        
-    
-        
+
     }
 }

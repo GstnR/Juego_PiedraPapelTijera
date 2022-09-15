@@ -11,9 +11,8 @@ import piedrapapeltijera.Enums.Mano;
  * @author Gaston Rojas
  */
 public class Tablero {
-    
-    private int[][] tablero;
 
+    private int[][] tablero;
 
     public Tablero() {
         this.inicializarTablero();
@@ -42,16 +41,14 @@ public class Tablero {
         Integer valor = null;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if ((a==i)&&(b==j)) {
+                if ((a == i) && (b == j)) {
                     valor = this.tablero[i][j];
                 }
             }
         }
-        
+
         return valor;
-        
+
     }
-    
-    
-    
+
 }

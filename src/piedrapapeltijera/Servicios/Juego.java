@@ -46,7 +46,7 @@ public class Juego {
         Enemigo e1 = new Enemigo_1Facil("facil", "que suerte!");
         Enemigo e2 = new Enemigo_2Medio("medio", "para la proxima");
         Enemigo e3 = new Enemigo_3Dificil("dificil", "Bueee...", "JAJAJAJJ NO SABES Jugar");
-        Enemigo e4 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "A LLORAR AL CAMPITO");
+        Enemigo e4 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "A LLORAR AL CAMPITO...");
         Enemigo e5 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "PU..!!!");
 
         Enemigos.add(e1);

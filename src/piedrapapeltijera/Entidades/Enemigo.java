@@ -11,6 +11,7 @@ import piedrapapeltijera.Enums.Mano;
  * @author Gaston Rojas
  */
 public abstract class Enemigo {
+
     String nombre;
     String mensaje;
     Mano mano;
@@ -35,7 +36,7 @@ public abstract class Enemigo {
     private void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
+
     public abstract int ataque();
-    
+
 }

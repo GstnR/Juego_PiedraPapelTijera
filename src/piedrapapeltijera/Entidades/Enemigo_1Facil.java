@@ -10,18 +10,18 @@ import piedrapapeltijera.Enums.Mano;
  *
  * @author Gaston Rojas
  */
-public final class Enemigo_1Facil extends Enemigo{
+public final class Enemigo_1Facil extends Enemigo {
 
     public Enemigo_1Facil(String nombre, String descripcion) {
         super(nombre, descripcion);
     }
-    
+
     @Override
-    public int ataque(){
-        
+    public int ataque() {
+
         Mano m = Mano.PIEDRA;
-        
+
         return m.getIndex();
     }
-    
+
 }

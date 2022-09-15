@@ -11,20 +11,19 @@ import piedrapapeltijera.Enums.Mano;
  * @author Gaston Rojas
  */
 public class Jugador {
-    
+
     String nombre;
     Mano mano;
     int puntaje = 0;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
-        
+
     }
 
     public String getNombre() {
         return nombre;
     }
-
 
     public Mano getMano() {
         return mano;
@@ -33,14 +32,10 @@ public class Jugador {
     public int getPuntaje() {
         return puntaje;
     }
-    
-    
-    
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-  
 
     public void setMano(Mano mano) {
         this.mano = mano;
@@ -49,7 +44,5 @@ public class Jugador {
     public void setPuntaje(int puntaje) {
         this.puntaje = puntaje;
     }
-    
-    
-    
+
 }
