@@ -37,30 +37,30 @@ public class Juego {
     public Jugador crearJugador() {
         System.out.println("Ingrese Su nombre");
         String nombre = leer.next();
-        System.out.println("ingrese una pequeña descripcion");
-        String descripcion = leer.next();
 
-        return new Jugador(nombre, descripcion);
+        return new Jugador(nombre);
     }
 
     public ArrayList cargarEnemigos() {
 
         Enemigo e1 = new Enemigo_1Facil("facil", "que suerte!");
         Enemigo e2 = new Enemigo_2Medio("medio", "para la proxima");
-        Enemigo e3 = new Enemigo_3Dificil("dificil", "Buen...", "JAJAJAJJ NO SABES Jugar");
+        Enemigo e3 = new Enemigo_3Dificil("dificil", "Bueee...", "JAJAJAJJ NO SABES Jugar");
         Enemigo e4 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "A LLORAR AL CAMPITO");
+        Enemigo e5 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "PU..!!!");
 
         Enemigos.add(e1);
         Enemigos.add(e2);
         Enemigos.add(e3);
         Enemigos.add(e4);
+        Enemigos.add(e5);
 
         return Enemigos;
     }
 
     public Mano elegirMano() {
         System.out.println("\n-----------------");
-        System.out.println("Ingrese su mano");
+        System.out.println("Cual elijes?");
         System.out.println("1 - Piedra");
         System.out.println("2 - Papel");
         System.out.println("3 - Tijera\n");
@@ -84,6 +84,15 @@ public class Juego {
 
         return m;
 
+    }
+    
+    public void mensaje(){
+        System.out.println("Bienvenido\nJueguemos Piedra Papel y Tijera");
+    }
+    
+    public void mensajeFinal(Jugador j){
+        System.out.println("--------------\n--------------\n--------------");
+        System.out.println("hola "+ j.getNombre() +"\ntu puntaje es: " + j.getPuntaje());
     }
 
 }

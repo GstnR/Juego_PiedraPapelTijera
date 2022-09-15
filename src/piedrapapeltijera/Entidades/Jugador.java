@@ -13,22 +13,18 @@ import piedrapapeltijera.Enums.Mano;
 public class Jugador {
     
     String nombre;
-    String Descripcion;
     Mano mano;
-    int puntaje;
+    int puntaje = 0;
 
-    public Jugador(String nombre, String Descripcion) {
+    public Jugador(String nombre) {
         this.nombre = nombre;
-        this.Descripcion = Descripcion;
+        
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public String getDescripcion() {
-        return Descripcion;
-    }
 
     public Mano getMano() {
         return mano;
@@ -44,9 +40,7 @@ public class Jugador {
         this.nombre = nombre;
     }
 
-    public void setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
-    }
+  
 
     public void setMano(Mano mano) {
         this.mano = mano;
