@@ -29,11 +29,7 @@ public class Juego {
 
     }
 
-    /*
- public int ganador(Mano j1, Mano j2){
-        return this.tablero[j1.getIndex()][j2.getIndex()];
-    }
-     */
+
     public Jugador crearJugador() {
         System.out.println("Ingrese Su nombre");
         String nombre = leer.next();
@@ -43,11 +39,11 @@ public class Juego {
 
     public ArrayList cargarEnemigos() {
 
-        Enemigo e1 = new Enemigo_1Facil("facil", "que suerte!");
-        Enemigo e2 = new Enemigo_2Medio("medio", "para la proxima");
-        Enemigo e3 = new Enemigo_3Dificil("dificil", "Bueee...", "JAJAJAJJ NO SABES Jugar");
-        Enemigo e4 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "A LLORAR AL CAMPITO...");
-        Enemigo e5 = new Enemigo_3Dificil("Dificil Final", "BIEN!", "PU..!!!");
+        Enemigo e1 = new Enemigo_1Facil("facil", "Que suerte!!!!");
+        Enemigo e2 = new Enemigo_2Medio("medio", "Para la proxima vez sera...");
+        Enemigo e3 = new Enemigo_3Dificil("dificil", " ... ", "No seas mal perdedor");
+        Enemigo e4 = new Enemigo_3Dificil("Dificil Final", "La suerte hablo!", " deja de jugar y estudia programacion ...");
+        Enemigo e5 = new Enemigo_3Dificil("Dificil Final", "que Suerte!", "Volve a ver los videos de Herencia, please!!!");
 
         Enemigos.add(e1);
         Enemigos.add(e2);
