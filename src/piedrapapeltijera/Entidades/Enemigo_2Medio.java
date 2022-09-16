@@ -26,7 +26,9 @@ public final class Enemigo_2Medio extends Enemigo {
             return m.getIndex();
         } else {
             Mano m= Mano.PAPEL;
-             this.mano = m;
+
+            super.setMano(m);
+            
             return m.getIndex();
         }
 

@@ -25,41 +25,7 @@ public class PiedraPapelTijera {
 
         Juego juego = new Juego();
 
-        Tablero tablero = juego.crearTablero();
-        Jugador jugador = juego.crearJugador();
-        ArrayList<Enemigo> enemigos = juego.cargarEnemigos();
-
-        for (Enemigo enemigo : enemigos) {
-            jugador.setMano(juego.elegirMano());
-            int resultado = tablero.getTablero(jugador.getMano().getIndex(), enemigo.ataque());
-            
-            System.out.println("\nTu: "+jugador.getMano()+"  Vs  " + enemigo.getMano());
-            
-            
-                   
-            switch (resultado) {
-                case -1:
-                    System.out.println("Resultado: -> Perdiste");
-                    System.out.println("Mensaje Enemigo: " + enemigo.getMensaje());
-                    if (enemigo instanceof Enemigo_3Dificil) {
-                        System.out.println("Insulto:" + ((Enemigo_3Dificil) enemigo).getInsulto());
-                    }
-                    jugador.setPuntaje(jugador.getPuntaje() - 1);
-                    break;
-                case 0:
-                    System.out.println("Resultado: -> Empate");
-                    System.out.println("Mensaje Enemigo: " + enemigo.getMensaje());
-                    break;
-                case 1:
-                    System.out.println("Resultado: -> Ganaste");
-                    System.out.println("Mensaje Enemigo: " + enemigo.getMensaje());
-                    jugador.setPuntaje(jugador.getPuntaje() + 1);
-                    break;
-
-            }
-        }
-
-        juego.mensajeFinal(jugador);
+        juego.jugar();
 
     }
 }

@@ -16,26 +16,26 @@ public abstract class Enemigo {
     String mensaje;
     Mano mano;
 
-    public Enemigo(String nombre, String descripcion) {
+    public Enemigo(String nombre, String mensaje) {
         this.nombre = nombre;
-        this.mensaje = descripcion;
+        this.mensaje = mensaje;
     }
 
-    private String getNombre() {
-        return nombre;
-    }
+//    private String getNombre() {
+//        return nombre;
+//    }
 
     public String getMensaje() {
         return mensaje;
     }
 
-    private void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+//    private void setNombre(String nombre) {
+//        this.nombre = nombre;
+//    }
 
-    private void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
-    }
+//    private void setMensaje(String mensaje) {
+//        this.mensaje = mensaje;
+//    }
 
     public abstract int ataque();
 
