@@ -37,6 +37,8 @@ public final class Enemigo_3Dificil extends Enemigo {
                 break;
 
         }
+        
+         this.mano = mano;
         return mano.getIndex();
 
     }

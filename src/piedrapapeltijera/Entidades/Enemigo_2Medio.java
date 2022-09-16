@@ -21,11 +21,13 @@ public final class Enemigo_2Medio extends Enemigo {
         Integer rand = (int) (Math.random() * 2);
 
         if (rand == 0) {
-            Mano mano = Mano.PIEDRA;
-            return mano.getIndex();
+            Mano m = Mano.PIEDRA;
+             this.mano = m;
+            return m.getIndex();
         } else {
-            Mano mano = Mano.PAPEL;
-            return mano.getIndex();
+            Mano m= Mano.PAPEL;
+             this.mano = m;
+            return m.getIndex();
         }
 
     }

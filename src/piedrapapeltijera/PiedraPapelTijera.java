@@ -32,6 +32,11 @@ public class PiedraPapelTijera {
         for (Enemigo enemigo : enemigos) {
             jugador.setMano(juego.elegirMano());
             int resultado = tablero.getTablero(jugador.getMano().getIndex(), enemigo.ataque());
+            
+            System.out.println("\nTu: "+jugador.getMano()+"  Vs  " + enemigo.getMano());
+            
+            
+                   
             switch (resultado) {
                 case -1:
                     System.out.println("Resultado: -> Perdiste");

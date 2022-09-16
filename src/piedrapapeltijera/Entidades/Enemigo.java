@@ -39,4 +39,15 @@ public abstract class Enemigo {
 
     public abstract int ataque();
 
+    public Mano getMano() {
+        return mano;
+    }
+
+    public void setMano(Mano mano) {
+        this.mano = mano;
+    }
+    
+    
+    
+
 }

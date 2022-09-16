@@ -20,8 +20,11 @@ public final class Enemigo_1Facil extends Enemigo {
     public int ataque() {
 
         Mano m = Mano.PIEDRA;
+        
+        this.mano = m;
 
         return m.getIndex();
     }
+   
 
 }
