@@ -13,7 +13,7 @@ import piedrapapeltijera.Enums.Mano;
 public final class Enemigo_1Facil extends Enemigo {
 
     public Enemigo_1Facil(String nombre, String descripcion) {
-        super(nombre, descripcion);
+        super(descripcion);
     }
 
     @Override

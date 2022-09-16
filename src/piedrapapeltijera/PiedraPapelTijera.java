@@ -3,12 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package piedrapapeltijera;
-
-import java.util.ArrayList;
-import piedrapapeltijera.Entidades.Enemigo;
-import piedrapapeltijera.Entidades.Enemigo_3Dificil;
-import piedrapapeltijera.Entidades.Jugador;
-import piedrapapeltijera.Entidades.Tablero;
 import piedrapapeltijera.Servicios.Juego;
 
 /**

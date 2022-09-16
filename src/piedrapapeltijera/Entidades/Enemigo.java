@@ -9,15 +9,15 @@ import piedrapapeltijera.Enums.Mano;
 /**
  *
  * @author Gaston Rojas
+ * 
+ * Clase abstacta del caul es la base de las otras 3 clases
  */
 public abstract class Enemigo {
 
-    String nombre;
     String mensaje;
     Mano mano;
 
-    public Enemigo(String nombre, String mensaje) {
-        this.nombre = nombre;
+    public Enemigo(String mensaje) {
         this.mensaje = mensaje;
     }
 

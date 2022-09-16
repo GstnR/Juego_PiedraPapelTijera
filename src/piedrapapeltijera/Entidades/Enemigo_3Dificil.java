@@ -15,7 +15,7 @@ public final class Enemigo_3Dificil extends Enemigo {
     String insulto;
 
     public Enemigo_3Dificil(String nombre, String descripcion, String insulto) {
-        super(nombre, descripcion);
+        super(descripcion);
         this.insulto = insulto;
     }
 
